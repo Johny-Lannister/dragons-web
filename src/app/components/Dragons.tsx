@@ -14,7 +14,7 @@ const Dragons: React.FC = () => {
   const [dragonsData, setDragonsData] = useState<Dragon[]>([]);
   console.log("josep");
   useEffect(() => {
-    fetch("http://localhost:8000/api/dragons")
+    fetch("https://dragons-api.vercel.app/api/dragons")
       .then((response) => response.json())
       .then((data) => setDragonsData(data))
       .catch((error) => console.error("Error fetching dragons data:", error));
@@ -22,7 +22,7 @@ const Dragons: React.FC = () => {
 
   return (
     <div className="mx-12 pb-40">
-      {/* Aquí puedes renderizar tus datos */}
+      {/* Aquí pueddadawdawsdgsdvxcvadsadadatos */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
       {dragonsData.map((dragon) => (
             <div key={dragon.id}>
