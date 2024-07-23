@@ -22,7 +22,6 @@ const Dragons: React.FC = () => {
 
   return (
     <div className="mx-12 pb-40">
-      {/* Aquí pueddadawdawsdgsdvxcvadsadadatos */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
       {dragonsData.map((dragon) => (
             <div key={dragon.id}>
