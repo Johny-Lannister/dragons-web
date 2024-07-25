@@ -5,6 +5,7 @@ interface Dragon {
   name: string;
   description: string;
   image: string;
+  size: string;
   age: string;
   color: string;
   riders: string;
@@ -30,6 +31,7 @@ const Dragons: React.FC = () => {
                         <h1 className="text-2xl font-bold mt-4">{dragon.name}</h1>
                         <p> <strong>Color: </strong> {dragon.color}</p>
                         <p> <strong>Age: </strong>{dragon.age}</p>
+                        <p> <strong>Size: </strong>{dragon.size}</p>
                         <p> <strong>Description: </strong> {dragon.description}</p>
                         <p> <strong>Rider/s: </strong>{dragon.riders}</p>
                     </div>
