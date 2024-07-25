@@ -6,16 +6,6 @@ import { useState } from 'react';
 import Dragons from './components/Dragons';
 
 const HomePage = () => {
-
-  const email = "juanfragale11@gmail.com";
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset icon after 2 seconds
-  };
-
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-slate-50 text-gray-800">
         <img

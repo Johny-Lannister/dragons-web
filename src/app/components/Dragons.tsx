@@ -12,9 +12,8 @@ interface Dragon {
 
 const Dragons: React.FC = () => {
   const [dragonsData, setDragonsData] = useState<Dragon[]>([]);
-  console.log("josep");
   useEffect(() => {
-    fetch("https://dragons-api.vercel.app/")
+    fetch("https://dragons-api.vercel.app/api/dragons")
       .then((response) => response.json())
       .then((data) => setDragonsData(data))
       .catch((error) => console.error("Error fetching dragons data:", error));
