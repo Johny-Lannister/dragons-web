@@ -1,8 +1,6 @@
 'use client'
 
 import React from 'react';
-import Image from 'next/image';
-import { useState } from 'react';
 import Dragons from './components/Dragons';
 
 const HomePage = () => {
@@ -18,7 +16,7 @@ const HomePage = () => {
       <section className="w-full py-21 px-4 md:px-8 bg-slate-50" id='all-dragons'>
         <div className="max-w-6xl mx-auto">
           <p className="text-lg md:text-xl text-gray-800 my-8 mb-2">
-          This is the complete list with all the dragons known in the Song of Ice and Fire books and the TV shows, Game of Thrones and House of The Dragon.
+          This is the complete list with all the dragons known in the Song of Ice and Fire books and the TV shows, Game of Thrones and House of The Dragon. The web consumes an API that provides all the information and characteristics about the dragons.
           </p>
         </div>
       </section>

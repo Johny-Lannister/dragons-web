@@ -36,3 +36,19 @@ h1 {
   font-size: 38px;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  .pepito {
+    height: 120px;
+    object-fit:fill;
+  }
+}
