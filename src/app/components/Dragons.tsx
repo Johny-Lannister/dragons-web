@@ -22,7 +22,7 @@ const Dragons: React.FC = () => {
   useEffect(() => {
     // vercel "https://dragons-api.vercel.app/api/dragons"
     // local "http://localhost:8000/api/dragons"
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}api/dragons`)
+    fetch("https://dragons-api.vercel.app/api/dragons")
       .then((response) => response.json())
       .then((data) => setDragonsData(data))
       .catch((error) => console.error("Error fetching dragons data:", error));
