@@ -45,7 +45,7 @@ const Dragons: React.FC = () => {
         return menuClasses.join(' ');
     }
   useEffect(() => {
-    fetch("https://dragons-api.vercel.app")
+    fetch("http://dragons-api.vercel.app")
       .then((response) => response.json())
       .then((data) => setDragonsData(data))
       .catch((error) => console.error("Error fetching dragons data:", error));
