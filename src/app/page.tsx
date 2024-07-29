@@ -17,7 +17,7 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto">
           <p className="text-lg md:text-xl text-gray-800 my-8 mb-2">
           {/* This is the complete list with all the dragons known in the Song of Ice and Fire books and the TV shows, Game of Thrones and House of The Dragon. The web consumes an API that provides all the information and characteristics about the dragons. */}
-          Consuming my own <strong>API</strong> we show the complete list with all the dragons known in the Song of Ice and Fire books and the TV shows, Game of Thrones and House of The Dragon
+          Consuming our own <strong>API</strong> we show the complete list with all the dragons known in the Song of Ice and Fire books and the TV shows, Game of Thrones and House of The Dragon
           </p>
         </div>
       </section>
