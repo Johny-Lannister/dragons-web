@@ -2,6 +2,9 @@
 
 import React from 'react';
 import Dragons from './components/Dragons';
+import DragonCarousel from './components/DragonCarousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const HomePage = () => {
   return (
@@ -20,6 +23,7 @@ const HomePage = () => {
           Consuming our own <strong>API</strong> we show the complete list with all the dragons known in the Song of Ice and Fire books and the TV shows, Game of Thrones and House of The Dragon
           </p>
         </div>
+        <DragonCarousel />
       </section>
       {/* <Navbar /> */}
     <Dragons />

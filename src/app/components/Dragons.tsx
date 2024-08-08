@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DragonCarousel from "./DragonCarousel"; // Asegúrate de que la ruta sea correcta
+import DragonCarousel from "./DragonCarousel";
 
 interface Dragon {
   id: number;
@@ -23,14 +23,17 @@ const Dragons: React.FC = () => {
     fetch("https://dragons-api.vercel.app/api/dragons")
       .then((response) => response.json())
       .then((data) => {
-        setDragonsData(data);
-        setIsLoading(false);
+        setTimeout(() => {  // Añadir un pequeño retraso
+          setDragonsData(data);
+          setIsLoading(false);
+        }, 1000);  // 1 segundo de retraso
       })
       .catch((error) => {
         console.error("Error fetching dragons data:", error);
         setIsLoading(false);
       });
   }, []);
+  
   
   const filterChange = (filter: string) => {
     setDragonDataFilter(filter);
@@ -47,7 +50,6 @@ const Dragons: React.FC = () => {
 
   return (
     <div>
-      <DragonCarousel />
       <div className="py-10 my-12 bg-slate-100 text-gray-1000 p-4 sm:p-6 md:flex md:justify-between md:items-center" id="navbar">
         <div className="container text-xl mx-auto flex items-center justify-center">
           <div>
@@ -67,7 +69,7 @@ const Dragons: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 md:gap-10 gap-4">
           {filteredDragons.map((dragon) => (
             <div key={dragon.id}>
-              <img className="pepito md:h-72 h-60 object-cover w-full max-w-full rounded-lg" src={dragon.image} alt={dragon.name} />
+              <img className="md:h-72 h-60 object-cover w-full max-w-full rounded-lg" src={dragon.image} alt={dragon.name} />
               <div className="space-y-2">
                 <h1 className="text-2xl font-bold mt-4">{dragon.name}</h1>
                 <p><strong>Color:</strong> {dragon.color}</p>

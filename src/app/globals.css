@@ -10,6 +10,30 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* styles/globals.css */
+/* styles/globals.css */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea las imágenes verticalmente */
+}
+
+.slick-slide img {
+  width: 100%; /* Ajusta el ancho para que llene el contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
+  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+}
+
+.slick-list {
+  overflow: hidden; /* Evita el desbordamiento del carrusel */
+}
+
+.slick-track {
+  display: flex; /* Asegura que los slides se alineen horizontalmente */
+}
+
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
